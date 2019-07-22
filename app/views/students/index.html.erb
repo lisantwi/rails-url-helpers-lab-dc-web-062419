@@ -1,6 +1,6 @@
 <h1> All Students </h1>
 <ul>
-<% @posts.each do |post| %>
-  <li><%= link_to post.title, post_path(post.id) %></li>
+<% @students.each do |student| %>
+  <li><%= link_to student.to_s, post_path(student.id) %></li>
 <% end %>
 </ul>
